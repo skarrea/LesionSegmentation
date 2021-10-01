@@ -21,7 +21,6 @@ def generateSphericalMask(image : sitk.Image, VOIOriginCoordinates : list, diame
 		VOI mask. Will be an image of the same dimensions as the input image.
 	"""
 	spacing = image.GetSpacing()
-	originIndex = image.TransformPhysicalPointToIndex(VOIOriginCoordinates)
 	size = image.GetSize()
 
 	# Making an index grid of one quadrant so we don't have to work with 
