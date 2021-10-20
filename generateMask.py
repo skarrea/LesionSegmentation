@@ -12,7 +12,7 @@ def generateSphericalMask(image : sitk.Image, VOIOriginCoordinates : list, diame
 	VOIOriginCoordinates : list
 		coordinates of centre of VOI
 	diameter : float, optional
-		Radius of sphere in mm, by default 10.
+		Diameter of sphere in mm, by default 10.
 	label : int, optional
 		positive label in mask
 	Returns
